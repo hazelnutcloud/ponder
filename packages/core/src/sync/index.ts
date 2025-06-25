@@ -1082,7 +1082,6 @@ export const createSync = async (params: {
             msg: `Initialized '${chain.name}' realtime sync with ${childCount} factory child addresses`,
           });
 
-          // TODO: rpc.riseSubscribe
           rpc.riseSubscribe({
             onError(error) {
               realtimeSync.onError(error);
