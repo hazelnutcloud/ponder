@@ -1077,10 +1077,13 @@ FOR EACH ROW EXECUTE FUNCTION "${namespace.schema}".${getTableNames(table).trigg
     },
     getReady() {
       return this.wrap({ method: "getReady" }, async () => {
-        return qb.drizzle
-          .select()
-          .from(PONDER_META)
-          .then((result) => result[0]?.value.is_ready === 1 ?? false);
+        return (
+          qb.drizzle
+            .select()
+            .from(PONDER_META)
+            //@ts-ignore
+            .then((result) => result[0]?.value.is_ready === 1 ?? false)
+        );
       });
     },
     async revert({ checkpoint, tx }) {
