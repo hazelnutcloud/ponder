@@ -1,6 +1,6 @@
 {
   "name": "ponder-rise",
-  "version": "0.11.28-beta.2",
+  "version": "0.11.28-beta.4",
   "description": "An open-source framework for crypto application backends",
   "license": "MIT",
   "type": "module",
@@ -79,7 +79,7 @@
     "pino": "^8.16.2",
     "prom-client": "^15.0.0",
     "semver": "^7.7.1",
-    "shreds": "0.2.2-beta.1",
+    "shreds": "0.2.2",
     "stacktrace-parser": "^0.1.10",
     "superjson": "^2.2.2",
     "terminal-size": "^4.0.0",
