@@ -1,6 +1,6 @@
 {
   "name": "create-ponder-rise",
-  "version": "0.11.28-beta.3",
+  "version": "0.11.28-beta.4",
   "type": "module",
   "description": "A CLI tool to create Ponder apps",
   "license": "MIT",
